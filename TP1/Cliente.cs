@@ -3,47 +3,48 @@
 public class Cliente
 {
 
-    private string Nombre;
-    private string Direccion;
-    private string Telefono;
-    private string DatosDeReferencia;
+    private string _nombre;
+    private string _direccion;
+    private string _telefono;
+    private string _datosDeReferencia;
 
     public Cliente(string nombre, string direccion, string telefono, string datosDeReferencia)
     {
-        Nombre = nombre;
-        Direccion = direccion;
-        Telefono = telefono;
-        DatosDeReferencia = datosDeReferencia;
+        _nombre = nombre;
+        _direccion = direccion;
+        _telefono = telefono;
+        _datosDeReferencia = datosDeReferencia;
     }
 
-    public string Nombre1
+    public string Nombre
     {
-        get => Nombre;
-        
-    }
-
-    public string Direccion1
-    {
-        get => Direccion;
-        
-    }
-
-    public string Telefono1
-    {
-        get => Telefono;
+        get => _nombre;
        
     }
 
-    public string DatosDeReferencia1
+    public string Direccion
     {
-        get => DatosDeReferencia;
+        get => _direccion;
+        
     }
-    
+
+    public string Telefono
+    {
+        get => _telefono;
+        
+    }
+
+    public string DatosDeReferencia
+    {
+        get => _datosDeReferencia;
+        
+    }
+
     public void ListarDatosCliente(){
-        Console.WriteLine("Nombre: " + this.Nombre);
-        Console.WriteLine("Direccion: " + this.Direccion);
-        Console.WriteLine("Telefono: " + this.Telefono);
-        Console.WriteLine("Datos de referencia: " + this.DatosDeReferencia);
+        Console.WriteLine("Nombre: " + this._nombre);
+        Console.WriteLine("Direccion: " + this._direccion);
+        Console.WriteLine("Telefono: " + this._telefono);
+        Console.WriteLine("Datos de referencia: " + this._datosDeReferencia);
     }
     
 }
